@@ -1,5 +1,5 @@
 ﻿
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public struct DeathPayload : ICensusDeathEvent
     {

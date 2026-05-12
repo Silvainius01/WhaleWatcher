@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public enum LeaderboardType { Player, Weapon }
     public enum LeaderboardSort { Descending, Ascending }

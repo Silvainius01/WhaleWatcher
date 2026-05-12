@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public struct ServerReport
     {

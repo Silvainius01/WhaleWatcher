@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using CommandEngine;
 using System.Linq;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public class KothReporter : PlanetSideReporter
     {

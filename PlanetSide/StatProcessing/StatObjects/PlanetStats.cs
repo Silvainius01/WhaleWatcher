@@ -11,9 +11,9 @@ using Newtonsoft.Json.Bson;
 using static System.Formats.Asn1.AsnWriter;
 using Microsoft.Extensions.Logging;
 using System.Reflection.Metadata.Ecma335;
-using PlanetSide.StatProcessing.Events;
+using WhaleWatcher.StatProcessing.Events;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class PlanetStats
     {

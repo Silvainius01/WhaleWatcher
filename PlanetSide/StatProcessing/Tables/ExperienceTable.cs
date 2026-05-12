@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using System.Collections.Concurrent;
 using System.Diagnostics;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public static class ExperienceTable
     {

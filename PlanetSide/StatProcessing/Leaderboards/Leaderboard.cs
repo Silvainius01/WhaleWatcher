@@ -1,5 +1,5 @@
-﻿using PlanetSide.StatProcessing.StatObjects;
-using PlanetSide.Websocket;
+﻿using WhaleWatcher.StatProcessing.StatObjects;
+using WhaleWatcher.Websocket;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class Leaderboard<TStats, TData> where TStats : IStatObject<TData> where TData : ITeamDataObject
     {

@@ -13,7 +13,7 @@ using System.ComponentModel;
 using DaybreakGames.Census.Stream;
 using System.Text.Json;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public abstract class PlanetSideReporter : ReportServer
     {

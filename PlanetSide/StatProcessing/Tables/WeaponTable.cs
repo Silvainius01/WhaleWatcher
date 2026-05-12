@@ -11,7 +11,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public static class WeaponTable
     {

@@ -1,7 +1,7 @@
 ﻿using CommandEngine;
 using DaybreakGames.Census.Stream;
 using Microsoft.Extensions.Logging;
-using PlanetSide.StatProcessing.Events;
+using WhaleWatcher.StatProcessing.Events;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class Tracker
     {

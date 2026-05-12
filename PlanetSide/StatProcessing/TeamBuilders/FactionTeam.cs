@@ -15,9 +15,9 @@ using System.Xml;
 using DaybreakGames.Census.Operators;
 using System.Collections.ObjectModel;
 using System.Reactive.Joins;
-using PlanetSide.StatProcessing.Events;
+using WhaleWatcher.StatProcessing.Events;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class FactionTeam : PlanetSideTeam
     {

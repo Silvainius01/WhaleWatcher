@@ -2,19 +2,16 @@
 using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using PlanetSide.Websocket;
-using PlanetSide.WebsocketServer;
+using WhaleWatcher.Websocket;
+using WhaleWatcher.WebsocketServer;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class Program
     {

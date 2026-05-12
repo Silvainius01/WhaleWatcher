@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using DaybreakGames.Census.Operators;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class CensusHandler : IDisposable
     {

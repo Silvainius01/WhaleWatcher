@@ -1,6 +1,6 @@
 ﻿using DaybreakGames.Census.Stream;
 using Microsoft.Extensions.Logging;
-using PlanetSide.Websocket;
+using WhaleWatcher.Websocket;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class SetPlayerTeam : PlanetSideTeam
     {

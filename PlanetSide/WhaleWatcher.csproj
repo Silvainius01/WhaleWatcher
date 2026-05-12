@@ -22,19 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommandEngine\CommandEngine.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="ChartTest\radarChart.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="ChartTest\TeamStats.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="_data\teamHamma.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="_data\teamOne.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -45,6 +32,10 @@
 
   <ItemGroup>
     <Folder Include="Websocket\Servers\BasicReporters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSharpPlayground\CommandEngine\CommandEngine.csproj" />
   </ItemGroup>
 
 </Project>

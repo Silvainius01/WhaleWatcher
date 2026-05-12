@@ -14,7 +14,7 @@ using System.Reflection.PortableExecutable;
 using System.Xml;
 using System.Diagnostics.CodeAnalysis;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class NexusTeam : PlanetSideTeam
     {

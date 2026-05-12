@@ -1,6 +1,6 @@
 ﻿
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public struct ExperiencePayload : ICensusCharacterEvent
     {

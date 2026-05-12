@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide.StatProcessing.StatObjects
+namespace WhaleWatcher.StatProcessing.StatObjects
 {
     public interface IStatObject<T> where T : IDataObject
     {

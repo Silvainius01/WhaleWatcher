@@ -10,12 +10,12 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
-using PlanetSide.StatProcessing.Events;
+using WhaleWatcher.StatProcessing.Events;
 using System.IO;
 using Newtonsoft.Json;
 using System.Data;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public abstract class PlanetSideTeam : IDisposable
     {

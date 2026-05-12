@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public struct ExperienceTick : IDataObject
     {

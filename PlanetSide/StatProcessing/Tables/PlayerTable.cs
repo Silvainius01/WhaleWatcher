@@ -10,7 +10,7 @@ using DaybreakGames.Census.Operators;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public static class PlayerTable
     {

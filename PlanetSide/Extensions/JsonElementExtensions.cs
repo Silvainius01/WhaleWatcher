@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public static class JsonElementExtensions
     {

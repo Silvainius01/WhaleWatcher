@@ -4,7 +4,7 @@ using NetMQ;
 using NetMQ.Sockets;
 using Newtonsoft.Json;
 
-namespace PlanetSide.WebsocketServer
+namespace WhaleWatcher.WebsocketServer
 {
     public class SubscriptionClient
     {

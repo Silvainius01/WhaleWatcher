@@ -12,7 +12,7 @@ using CommandEngine;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public enum ServerType { Publisher }
     public abstract class ReportServer

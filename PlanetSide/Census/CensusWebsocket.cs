@@ -7,7 +7,7 @@ using DaybreakGames.Census.Stream;
 using Microsoft.Extensions.Logging;
 using Websocket.Client;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public class CensusWebsocket : IDisposable
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide.StatProcessing.Events
+namespace WhaleWatcher.StatProcessing.Events
 {
     public class FacilityControlEvent : ICensusZoneEvent
     {

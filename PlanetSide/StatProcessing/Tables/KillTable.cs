@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Websocket.Client.Logging;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
 
 

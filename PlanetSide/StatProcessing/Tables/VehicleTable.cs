@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanetSide
+namespace WhaleWatcher
 {
     public enum VehicleType { Unknown = 0, Air = 1, Hover = 2, Ground = 5, Turret = 7, DropPod = 8 }
     

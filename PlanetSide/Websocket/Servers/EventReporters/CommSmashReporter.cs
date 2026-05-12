@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Websocket.Client.Logging;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public class CommSmashReporter : PlanetSideReporter
     {

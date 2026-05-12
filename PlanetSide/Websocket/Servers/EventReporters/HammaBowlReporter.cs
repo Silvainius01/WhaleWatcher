@@ -8,7 +8,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace PlanetSide.Websocket
+namespace WhaleWatcher.Websocket
 {
     public struct PlayerCsvEntry
     {
