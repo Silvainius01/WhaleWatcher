@@ -87,7 +87,6 @@ namespace WhaleWatcher
                 float baseExp = ExperienceTable.ExperienceMap[expEvent.ExperienceId].ScoreAmount;
                 float damagePercent = expEvent.ScoreAmount / baseExp;
 
-
                 _assists.Add(expEvent);
                 assistPercent += damagePercent;
                 _characterDamage.Add(expEvent.CharacterId, damagePercent);

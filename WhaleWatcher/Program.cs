@@ -17,7 +17,7 @@ namespace WhaleWatcher
     {
         public static readonly ILoggerFactory LoggerFactory =
             Microsoft.Extensions.Logging.LoggerFactory.Create(builder => 
-                builder.SetMinimumLevel(LogLevel.Information).AddConsole());
+                builder.SetMinimumLevel(LogLevel.Debug).AddConsole());
 
         private static readonly ILogger<Program> Logger = LoggerFactory.CreateLogger<Program>();
 

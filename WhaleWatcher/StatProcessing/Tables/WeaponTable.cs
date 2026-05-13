@@ -99,7 +99,7 @@ namespace WhaleWatcher
             return false;
         }
 
-        public static bool TryGetOrAddWeaponStats(this IDictionary<int, WeaponStats> _weaponStats, int itemId, out WeaponStats weaponStats)
+        public static bool TryGetOrAddWeaponStats(this IDictionary<int, WeaponStats> _weaponStats, int itemId, int teamId, out WeaponStats weaponStats)
         {
             if (TryGetWeapon(itemId, out var wData))
             {
@@ -107,7 +107,7 @@ namespace WhaleWatcher
                     weaponStats = _weaponStats[itemId];
                 else
                 {
-                    //wData.TeamId = wData.FactionId;
+                    wData.TeamId = teamId;
                     weaponStats = new WeaponStats()
                     {
                         Data = wData,
@@ -115,7 +115,7 @@ namespace WhaleWatcher
                     };
                     _weaponStats[itemId] = weaponStats;
                 }
-                ;
+
                 return true;
             }
 
