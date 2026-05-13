@@ -16,8 +16,6 @@ using Websocket.Client.Logging;
 
 namespace WhaleWatcher
 {
-
-
     internal static class DamageTracker
     {
         class InfantryLife

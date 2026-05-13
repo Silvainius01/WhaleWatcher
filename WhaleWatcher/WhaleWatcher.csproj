@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\CSharpPlayground\CommandEngine\CommandEngine.csproj" />
+    <ProjectReference Include="..\..\CommandEngine\CommandEngine\CommandEngine.csproj" />
   </ItemGroup>
 
 </Project>
