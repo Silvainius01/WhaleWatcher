@@ -36,6 +36,8 @@ namespace WhaleWatcher.Websocket
         private Task serverTask;
         private CancellationTokenSource ctServer = new CancellationTokenSource();
 
+        private Dictionary<string, bool> topicDebug = new Dictionary<string, bool>();
+
         public ReportServer(string port, ServerType type)
         {
             this.port = port;
@@ -143,7 +145,9 @@ namespace WhaleWatcher.Websocket
                             .SendFrame(report.Data); // Message
 
 
-                        if (DebugEventDetails)
+                        if (topicDebug.TryGetValue(report.Topic, out bool dt) && dt)
+                            Logger.LogDebug($"T: {report.Topic}\nD: {report.Data}");
+                        else if (DebugEventDetails)
                             Logger.LogDebug($"Report '{report.Topic}' Data: {report.Data}");
                         else if(DebugEventNames)
                             Logger.LogInformation($"Sent report '{report.Topic}'");
@@ -205,6 +209,23 @@ namespace WhaleWatcher.Websocket
                             DebugEventDetails = bv2;
                         }
                         Logger.LogInformation($"Set DebugEventDetails: {DebugEventDetails}");
+                        break;
+                    case "-t":
+                    case "-topic":
+                        if(i < args.Count - 1)
+                        {
+                            bool v = true;
+                            string topic = args[++i];
+
+                            if (i < args.Count - 2 && CommandManager.TryParseBoolean(args[i + 1], out v))
+                                ++i;
+
+                            if (!topicDebug.ContainsKey(topic))
+                                topicDebug.Add(topic, v);
+                            else topicDebug[topic] = v;
+
+                            Logger.LogInformation($"Debug '{topic}' -> {v}");
+                        }
                         break;
                 }
             }

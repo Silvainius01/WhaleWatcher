@@ -189,16 +189,16 @@ namespace WhaleWatcher
 
             bool AddStat(string characterId, int weaponId, Action<PlanetStats> action)
             {
-                if (TeamPlayers.ContainsKey(characterId))
+                if (_teamPlayerStats.ContainsKey(characterId))
                 {
                     action.Invoke(TeamStats);
-                    action.Invoke(TeamPlayers[characterId].Stats);
+                    action.Invoke(_teamPlayerStats[characterId].Stats);
 
                     if (weaponId > 0)
                     {
-                        if (_teamWeaponStats.TryGetOrAddWeaponStats(weaponId, out var wstats))
+                        if (_teamWeaponStats.TryGetOrAddWeaponStats(weaponId, TeamId, out var wstats))
                             action.Invoke(wstats.Stats);
-                        if (TeamPlayers[characterId].WeaponStats.TryGetOrAddWeaponStats(weaponId, out var pwstats))
+                        if (_teamPlayerStats[characterId].WeaponStats.TryGetOrAddWeaponStats(weaponId, TeamId, out var pwstats))
                             action.Invoke(pwstats.Stats);
                     }
 
@@ -233,9 +233,7 @@ namespace WhaleWatcher
 
                         // If not a death, add a kill.
                         if (!AddStat(deathEvent.CharacterId, deathEvent.AttackerWeaponId, stats => stats.AddDeath(ref deathEvent)))
-                        {
                             AddStat(deathEvent.OtherId, deathEvent.AttackerWeaponId, stats => stats.AddKill(ref deathEvent));
-                        }
                         break;
                     case CensusEventType.VehicleDestroy:
                         var destroyEvent = (VehicleDestroyPayload)payload;

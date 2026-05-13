@@ -28,7 +28,7 @@ namespace WhaleWatcher
             topStats = new List<TStats>(request.BoardSize * teams.Length);
             statComparer = request.LeaderboardSort == LeaderboardSort.Ascending
                 ? (a, b) => this.request.GetStat(a.Data, a.Stats).CompareTo(this.request.GetStat(b.Data, b.Stats))
-                : (a, b) => a.Data.Id -this.request.GetStat(a.Data, a.Stats).CompareTo(this.request.GetStat(b.Data, b.Stats));
+                : (a, b) => -this.request.GetStat(a.Data, a.Stats).CompareTo(this.request.GetStat(b.Data, b.Stats));
 
             statTuples = new List<(PlanetSideTeam team, List<TStats> sortedStats)>(teams.Length);
             foreach (var team in teams)
@@ -70,7 +70,8 @@ namespace WhaleWatcher
                 {
                     Score = score,
                     EntryName = topStats[i].Data.Name,
-                    TeamId = topStats[i].Data.TeamId
+                    TeamId = topStats[i].Data.TeamId,
+                    FactionId = topStats[i].Data.FactionId
                 };
             }
 
